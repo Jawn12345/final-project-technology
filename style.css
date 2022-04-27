@@ -16,7 +16,7 @@ body {
 
 .mainPage {
     background: rgb(2,0,36);
-    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 71%);
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 45%, rgba(0,138,255,1) 100%);
 
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
