@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    font-size: 1.6em;
+
+}
+
+.mainPage {
+    background: rgb(2,0,36);
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 71%);
+
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
