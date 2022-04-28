@@ -10,13 +10,9 @@ body, html {
 
 body {
     font-family: 'VT323', monospace;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.6em;
 
-}
-
-.pages {
-    display: grid;
-    width: 200%;
 }
 
 .mainPage {
@@ -40,9 +36,105 @@ body {
 }
 
 .playButton button {
-/* width: 100px; */
-border: none;
-background-color: transparent;
-cursor: pointer;
-transition: 0.3s ease-out;
+    /* width: 100px; */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-out;
 }
+
+.playButton button:hover {
+    transform: scale(1.05);
+}
+
+.contentPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+
+    background-color: #090979;
+}
+
+.pageOne {
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr 1fr 1fr;
+    grid-template-rows: 1fr 70% 1fr;
+    height: 100vh;
+
+    background-color: #090979;
+}
+
+.pageOneContentBox {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    background-color: white;
+    display: grid;
+    justify-items: center;
+}
+
+.header {
+    display: grid;
+    justify-items: center;
+}
+
+.header h2 {
+    margin-bottom: 0%;
+}
+
+.header p {
+    margin: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contentSideBar {
+    position: relative;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    padding: 0%;
+    color: white;
+}
+
+.contentInfo {
+    display: grid;
+    grid-auto-flow: column;
+    margin-bottom: 5%;
+}
+
+.contentInfo::before {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    /* right: 29.5%; */
+    /* left: 37px; */
+    display: block;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: rgba(255,255,255,0.14);
+}
+
+.contentInfo h2 {
+    margin: 0;
+    display: grid;
+    align-self: start;
+    padding-left: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bi {
+    font-size: 0.7em;
+    display: grid;
+    align-self: center;
+}
+
+/* ul li:before {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+} */
