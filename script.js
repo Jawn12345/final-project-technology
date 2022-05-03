@@ -1,11 +1,11 @@
 
-anime({
-  targets: '.circle',
-  translateX: 250,
-  delay: anime.stagger(200, {start: 1000}),
-  direction: "reverse",
-  loop: true
-});
+// anime({
+//   targets: '.circle',
+//   translateX: 250,
+//   delay: anime.stagger(200, {start: 1000}),
+//   direction: "reverse",
+//   loop: true
+// });
 
 // anime({
 //   targets: '.circle',
@@ -20,3 +20,17 @@ anime({
 //   easing: 'easeOutElastic(1, .8)',
 //   loop: true
 // });
+
+anime({
+    targets: '.logo',
+    rotate: 360,
+    easing: 'easeOutQuad',
+    loop: true
+})
+
+anime({
+    targets: '.logo2',
+    rotate: -360,
+    easing: 'easeOutQuad',
+    loop: true
+})
