@@ -101,8 +101,8 @@ body {
 }
 
 .pageFive {
-    grid-template-rows: 1fr 7fr .5fr;
-    height: 100vh;
+    grid-template-rows: 0.9fr 7fr .5fr;
+    height: 120vh;
 }
 
 .pageOneContentBox, .pageThreeContentBox,
@@ -194,6 +194,9 @@ body {
 .pageFour .contentInfo::before {
     height: 200%;
 }
+.pageFive .contentInfo::before {
+    height: 120%;
+}
 
 .contentInfo h2 {
     margin: 0;
@@ -233,6 +236,10 @@ ul {
 
 .pageFourImage img {
     width: 75%;
+}
+
+.contentPage h2:hover {
+    transform: scale(1.1);
 }
 
 .contentTitle {
