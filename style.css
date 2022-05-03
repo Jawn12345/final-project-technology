@@ -238,8 +238,15 @@ ul {
     width: 75%;
 }
 
+.contentPage h2 {
+    opacity: 100%;
+    color: white;
+    transition: all 2s ease-out;
+}
+
 .contentPage h2:hover {
     transform: scale(1.1);
+    color: blue;
     opacity: 0%;
 }
 
@@ -269,5 +276,9 @@ ul {
 }
 
 .logo img, .logo2 img {
+    width: 100%;
+}
+
+.pageFiveContentBox a {
     width: 100%;
 }
