@@ -49,12 +49,16 @@ body {
 
 .contentPage {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr;
     height: 100vh;
-    border-top-left-radius: 5px;
+    justify-items: center;
 
-    background-color: #090979;
+    /* background-color: #090979; */
+
+    background: rgb(2,0,36);
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 45%, rgba(0,138,255,1) 100%);
+    color: white;
 }
 
 .pageOne {
@@ -69,7 +73,7 @@ body {
 
 }
 
-.pageTwo, .pageThree, .pageFour {
+.pageTwo, .pageThree, .pageFour, .pageFive {
     display: grid;
     grid-template-columns: 1fr 50% 1fr 1fr 1fr;
     grid-template-rows: .56fr 7fr 1fr;
@@ -82,8 +86,8 @@ body {
 }
 
 .pageTwo {
-    grid-template-rows: .35fr 7fr .5fr;
-    height: 280vh;
+    grid-template-rows: .3fr 7fr .25fr;
+    height: 300vh;
 }
 
 .pageThree {
@@ -96,7 +100,13 @@ body {
     height: 200vh;
 }
 
-.pageOneContentBox, .pageThreeContentBox, .pageFourContentBox {
+.pageFive {
+    grid-template-rows: 1fr 7fr .5fr;
+    height: 100vh;
+}
+
+.pageOneContentBox, .pageThreeContentBox,
+.pageFourContentBox, .pageFiveContentBox {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
@@ -168,10 +178,13 @@ body {
 }
 
 .pageTwo .contentInfo::before {
-    height: 280%;
+    height: 300%;
 }
 .pageThree .contentInfo::before {
     height: 160%;
+}
+.pageFour .contentInfo::before {
+    height: 200%;
 }
 
 .contentInfo h2 {
@@ -212,4 +225,14 @@ ul {
 
 .pageFourImage img {
     width: 75%;
+}
+
+.contentTitle {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.animCircles {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
 }
