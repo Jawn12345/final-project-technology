@@ -10,8 +10,8 @@ body, html {
 
 body {
     font-family: 'VT323', monospace;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1.6em;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-size: 1.5em;
 
 }
 
@@ -62,25 +62,41 @@ body {
     grid-template-rows: 1fr 7fr 1fr;
     height: 100vh;
 
-    background-color: #090979;
+    /* background-color: #090979; */
+    background: rgb(2,0,36);
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 45%, rgba(0,138,255,1) 100%);
+
 }
 
-.pageTwo {
+.pageTwo, .pageThree {
     display: grid;
     grid-template-columns: 1fr 50% 1fr 1fr 1fr;
     grid-template-rows: .56fr 7fr 1fr;
     height: 180vh;
 
-    background-color: #090979;
+    /* background-color: #090979; */
+    background: rgb(2,0,36);
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 45%, rgba(0,138,255,1) 100%);
+
 }
 
-.pageOneContentBox {
+.pageTwo {
+    grid-template-rows: .35fr 7fr .5fr;
+    height: 280vh;
+}
+
+.pageOneContentBox, .pageThreeContentBox {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
     background-color: white;
     display: grid;
     justify-items: center;
+}
+
+.pageThreeContentBox p:nth-child(3) {
+    font-style: italic;
+    color: gray;
 }
 
 .header {
@@ -109,6 +125,11 @@ body {
     /* position: sticky;
     top: 0;
     height: 100vh; */
+    transition: all .2s ease-in-out;
+}
+
+.contentSideBar h2:hover {
+    transform: scale(1.1);
 }
 
 .contentInfo {
@@ -156,4 +177,13 @@ ul {
     display: grid;
     align-self: center;
     /* justify-items: center; */
+}
+
+.pageTwoImage {
+    display: grid;
+    justify-items: center;
+}
+
+.pageTwoImage img {
+    width: 75%;
 }
